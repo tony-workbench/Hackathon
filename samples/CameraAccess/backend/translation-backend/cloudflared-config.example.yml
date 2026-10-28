@@ -1,0 +1,7 @@
+tunnel: replace-with-your-tunnel-id
+credentials-file: /path/to/.cloudflared/replace-with-your-tunnel-id.json
+
+ingress:
+  - hostname: translate.example.com
+    service: http://localhost:8000
+  - service: http_status:404
